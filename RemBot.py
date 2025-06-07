@@ -6,7 +6,7 @@ import smtplib
 from email.message import EmailMessage
 
 # 1) Carga de credenciales
-#load_dotenv(dotenv_path="OPENAI_API.env")
+load_dotenv(dotenv_path="OPENAI_API.env")
 api_key    = os.getenv("GEMINI_API_KEY")
 email_user = os.getenv("EMAIL_USER")
 email_pass = os.getenv("GMAIL_APP_PASSWORD")
