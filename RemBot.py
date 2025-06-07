@@ -15,9 +15,9 @@ email_to   = os.getenv("EMAIL_TO")
 # 2) Definir horarios de cursos
 cursos = {
     "Inteligencia Artificial": {
-        "days": ["Mon", "Sun"],
-        "times": {"Mon": "18:00–22:00", "Sun": "08:00–14:00"},
-        "lugar": {"Mon": "Auditorio CINAR", "Sun": "Aula 101"}
+        "days": ["Mon", "Sat"],
+        "times": {"Mon": "18:00–22:00", "Sat": "08:00–14:00"},
+        "lugar": {"Mon": "Auditorio CINAR", "Sat": "Aula 101"}
     },
     "Inteligencia Artificial - Virtual": {
         "days": ["Mon", "Tue", "Thu"],
