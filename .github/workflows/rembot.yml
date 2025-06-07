@@ -3,9 +3,9 @@ name: Ejecutar RemBot
 on:
   schedule:
     # Ejecutar lunes, miércoles y domingos a las 6:00 p.m. UTC (ajusta si estás en otro huso horario)
-    - cron: '0 18 * * 0,1,3'
+    - cron: '0 23 * * 0,1,3'
     # Ejecutar viernes a las 8:00 a.m. UTC
-    - cron: '0 8 * * 5'
+    - cron: '0 13 * * 5'
   workflow_dispatch:  # permite ejecución manual desde GitHub
 
 jobs:
