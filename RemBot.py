@@ -6,7 +6,7 @@ import smtplib
 from email.message import EmailMessage
 
 # 1) Carga de credenciales
-load_dotenv(dotenv_path="OPENAI_API.env")
+#load_dotenv(dotenv_path="OPENAI_API.env")
 api_key    = os.getenv("GEMINI_API_KEY")
 email_user = os.getenv("EMAIL_USER")
 email_pass = os.getenv("GMAIL_APP_PASSWORD")
@@ -15,9 +15,9 @@ email_to   = os.getenv("EMAIL_TO")
 # 2) Definir horarios de cursos
 cursos = {
     "Inteligencia Artificial": {
-        "days": ["Mon", "Sat"],
-        "times": {"Mon": "18:00–22:00", "Sat": "08:00–14:00"},
-        "lugar": {"Mon": "Auditorio CINAR", "Sat": "Aula 101"}
+        "days": ["Mon", "Sun"],
+        "times": {"Mon": "18:00–22:00", "Sun": "08:00–14:00"},
+        "lugar": {"Mon": "Auditorio CINAR", "Sun": "Aula 101"}
     },
     "Inteligencia Artificial - Virtual": {
         "days": ["Mon", "Tue", "Thu"],
